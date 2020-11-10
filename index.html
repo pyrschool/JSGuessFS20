@@ -20,6 +20,7 @@
         }
 
         var guess = window.prompt("Second user, guess the number between " + min + " and " + max);
+        var tries = 1;
         while (guess != target) {
             if (guess < target) {
                 window.alert("Try a bigger number!");
@@ -28,9 +29,10 @@
             }
             // ask again
             guess = window.prompt("Second user, guess the number");
+            tries++;
         }
         // the only way to come here is if guess == taeget, otherwise we would be in the loop
-        window.alert("You got it :)");
+        window.alert("You got it in " + tries + " tries :)");
     </script>
 </head>
 
