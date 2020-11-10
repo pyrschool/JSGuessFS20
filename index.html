@@ -17,13 +17,17 @@
         }
 
         var guess = window.prompt("Second user, guess the number");
-        if (guess < target) {
-            window.alert("Try a bigger number!");
-        } else if (guess > target) {
-            window.alert("Try a smaller number!");
-        } else {
-            window.alert("You got it :)");
+        while (guess != target) { 
+            if (guess < target) {
+                window.alert("Try a bigger number!");
+            } else if (guess > target) {
+                window.alert("Try a smaller number!");
+            }
+            // ask again
+            guess = window.prompt("Second user, guess the number");
         }
+        // the only way to come here is if guess == taeget, otherwise we would be in the loop
+         window.alert("You got it :)");
     </script>
 </head>
 <body>
