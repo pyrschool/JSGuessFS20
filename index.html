@@ -11,6 +11,15 @@
         } else if (target > 10) {
             window.alert("Your number is above 10!");
         }
+        
+        var guess = window.prompt("Second user, guess the number");
+        if (guess < target) {
+            window.alert("Try a bigger number!");
+        } else if (guess > target) {
+            window.alert("Try a smaller number!");
+        } else {
+            window.alert("You got it :)");
+        }
     </script>
 </head>
 <body>
