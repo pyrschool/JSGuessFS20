@@ -6,6 +6,9 @@
     <title>Guess the number</title>
     <script>
         var target = window.prompt("Second user look away!!! First user, enter a number between 1 and 10");
+        if (target < 1) {
+            window.alert("Your number is below 1!");
+        }
     </script>
 </head>
 <body>
